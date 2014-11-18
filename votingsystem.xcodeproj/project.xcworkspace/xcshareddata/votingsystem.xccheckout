@@ -10,31 +10,31 @@
 	<string>votingsystem</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>93CB57ED90E579849D2857DD2BBB1FA065FFFB5A</key>
-		<string>https://github.com/KostaPapa/VotingSystem.git</string>
+		<key>9E9D07759CC90A11462027AD200EEBF3EB2B93E5</key>
+		<string>https://github.com/javlonusmanov/IOSClassProject</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>votingsys/votingsystem.xcodeproj</string>
+	<string>votingsystem.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>93CB57ED90E579849D2857DD2BBB1FA065FFFB5A</key>
-		<string>../../..</string>
+		<key>9E9D07759CC90A11462027AD200EEBF3EB2B93E5</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/KostaPapa/VotingSystem.git</string>
+	<string>https://github.com/javlonusmanov/IOSClassProject</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>93CB57ED90E579849D2857DD2BBB1FA065FFFB5A</string>
+	<string>9E9D07759CC90A11462027AD200EEBF3EB2B93E5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>93CB57ED90E579849D2857DD2BBB1FA065FFFB5A</string>
+			<string>9E9D07759CC90A11462027AD200EEBF3EB2B93E5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>VotingSystem</string>
+			<string>IOSClassProject</string>
 		</dict>
 	</array>
 </dict>
