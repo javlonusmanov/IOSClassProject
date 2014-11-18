@@ -14,7 +14,6 @@
 		0A41225E1A168D6C0035593C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41225D1A168D6C0035593C /* Images.xcassets */; };
 		0A4122611A168D6C0035593C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A41225F1A168D6C0035593C /* LaunchScreen.xib */; };
 		0A41226D1A168D6C0035593C /* votingsystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41226C1A168D6C0035593C /* votingsystemTests.swift */; };
-		0A4D2DD31A1BD2870033EEB8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DD21A1BD2870033EEB8 /* User.swift */; };
 		0A4D2DD51A1BD5300033EEB8 /* Canditate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */; };
 		0A4D2DD81A1BDB560033EEB8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */; };
 		0A4D2DDA1A1BDB6F0033EEB8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */; };
@@ -52,7 +51,6 @@
 		0A4122661A168D6C0035593C /* votingsystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = votingsystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41226B1A168D6C0035593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A41226C1A168D6C0035593C /* votingsystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = votingsystemTests.swift; sourceTree = "<group>"; };
-		0A4D2DD21A1BD2870033EEB8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canditate.swift; sourceTree = "<group>"; };
 		0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = votingsystem/Bolts.framework; sourceTree = "<group>"; };
 		0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = votingsystem/Parse.framework; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			children = (
 				0A4122531A168D6C0035593C /* AppDelegate.swift */,
 				0A4122581A168D6C0035593C /* ViewController.swift */,
-				0A4D2DD21A1BD2870033EEB8 /* User.swift */,
 				0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */,
 				0A41225A1A168D6C0035593C /* Main.storyboard */,
 				0A41225D1A168D6C0035593C /* Images.xcassets */,
@@ -282,7 +279,6 @@
 				0A4122591A168D6C0035593C /* ViewController.swift in Sources */,
 				0A4122541A168D6C0035593C /* AppDelegate.swift in Sources */,
 				0A4122571A168D6C0035593C /* votingsystem.xcdatamodeld in Sources */,
-				0A4D2DD31A1BD2870033EEB8 /* User.swift in Sources */,
 				0A4D2DD51A1BD5300033EEB8 /* Canditate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
