@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var testObject: PFObject = PFObject(className: "testObject")
+        testObject["key"] = "value"
+        testObject.save()
+        
     }
 
     override func didReceiveMemoryWarning() {

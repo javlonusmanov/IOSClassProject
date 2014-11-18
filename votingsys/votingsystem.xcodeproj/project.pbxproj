@@ -60,8 +60,8 @@
 		0A4D2DD01A1BD1FB0033EEB8 /* ViewResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewResultsViewController.swift; sourceTree = "<group>"; };
 		0A4D2DD21A1BD2870033EEB8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canditate.swift; sourceTree = "<group>"; };
-		0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = votingsystem/Bolts.framework; sourceTree = "<group>"; };
+		0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = votingsystem/Parse.framework; sourceTree = "<group>"; };
 		0A4D2DDB1A1BDC1A0033EEB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0A4D2DDD1A1BDC260033EEB8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0A4D2DDF1A1BDC350033EEB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +72,7 @@
 		0A4D2DE91A1BDC890033EEB8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0A4D2DEB1A1BDC980033EEB8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0A4D2DED1A1BDCB20033EEB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A608B481A1BE3250085EF6F /* votingsystem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "votingsystem-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +138,8 @@
 				0A41225D1A168D6C0035593C /* Images.xcassets */,
 				0A41225F1A168D6C0035593C /* LaunchScreen.xib */,
 				0A4122551A168D6C0035593C /* votingsystem.xcdatamodeld */,
-				0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */,
-				0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */,
 				0A4122511A168D6B0035593C /* Supporting Files */,
+				0A608B481A1BE3250085EF6F /* votingsystem-Bridging-Header.h */,
 			);
 			path = votingsystem;
 			sourceTree = "<group>";
@@ -172,6 +172,8 @@
 		0A4D2DEF1A1BDEAD0033EEB8 /* ParseFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */,
+				0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */,
 				0A4D2DED1A1BDCB20033EEB8 /* SystemConfiguration.framework */,
 				0A4D2DEB1A1BDC980033EEB8 /* StoreKit.framework */,
 				0A4D2DE91A1BDC890033EEB8 /* Security.framework */,
@@ -416,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/votingsystem",
@@ -423,6 +426,8 @@
 				INFOPLIST_FILE = votingsystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "votingsystem/votingsystem-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -430,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/votingsystem",
@@ -437,6 +443,7 @@
 				INFOPLIST_FILE = votingsystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "votingsystem/votingsystem-Bridging-Header.h";
 			};
 			name = Release;
 		};
