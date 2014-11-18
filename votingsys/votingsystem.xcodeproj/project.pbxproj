@@ -14,6 +14,11 @@
 		0A41225E1A168D6C0035593C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41225D1A168D6C0035593C /* Images.xcassets */; };
 		0A4122611A168D6C0035593C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A41225F1A168D6C0035593C /* LaunchScreen.xib */; };
 		0A41226D1A168D6C0035593C /* votingsystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41226C1A168D6C0035593C /* votingsystemTests.swift */; };
+		0A4D2DCD1A1BD0CE0033EEB8 /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DCC1A1BD0CE0033EEB8 /* VoteViewController.swift */; };
+		0A4D2DCF1A1BD1AC0033EEB8 /* ResutlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DCE1A1BD1AC0033EEB8 /* ResutlsViewController.swift */; };
+		0A4D2DD11A1BD1FB0033EEB8 /* ViewResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DD01A1BD1FB0033EEB8 /* ViewResultsViewController.swift */; };
+		0A4D2DD31A1BD2870033EEB8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DD21A1BD2870033EEB8 /* User.swift */; };
+		0A4D2DD51A1BD5300033EEB8 /* Canditate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		0A4122661A168D6C0035593C /* votingsystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = votingsystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41226B1A168D6C0035593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A41226C1A168D6C0035593C /* votingsystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = votingsystemTests.swift; sourceTree = "<group>"; };
+		0A4D2DCC1A1BD0CE0033EEB8 /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		0A4D2DCE1A1BD1AC0033EEB8 /* ResutlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResutlsViewController.swift; sourceTree = "<group>"; };
+		0A4D2DD01A1BD1FB0033EEB8 /* ViewResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewResultsViewController.swift; sourceTree = "<group>"; };
+		0A4D2DD21A1BD2870033EEB8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canditate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,11 @@
 			children = (
 				0A4122531A168D6C0035593C /* AppDelegate.swift */,
 				0A4122581A168D6C0035593C /* ViewController.swift */,
+				0A4D2DCC1A1BD0CE0033EEB8 /* VoteViewController.swift */,
+				0A4D2DCE1A1BD1AC0033EEB8 /* ResutlsViewController.swift */,
+				0A4D2DD01A1BD1FB0033EEB8 /* ViewResultsViewController.swift */,
+				0A4D2DD21A1BD2870033EEB8 /* User.swift */,
+				0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */,
 				0A41225A1A168D6C0035593C /* Main.storyboard */,
 				0A41225D1A168D6C0035593C /* Images.xcassets */,
 				0A41225F1A168D6C0035593C /* LaunchScreen.xib */,
@@ -215,9 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4D2DCD1A1BD0CE0033EEB8 /* VoteViewController.swift in Sources */,
 				0A4122591A168D6C0035593C /* ViewController.swift in Sources */,
+				0A4D2DD11A1BD1FB0033EEB8 /* ViewResultsViewController.swift in Sources */,
 				0A4122541A168D6C0035593C /* AppDelegate.swift in Sources */,
 				0A4122571A168D6C0035593C /* votingsystem.xcdatamodeld in Sources */,
+				0A4D2DCF1A1BD1AC0033EEB8 /* ResutlsViewController.swift in Sources */,
+				0A4D2DD31A1BD2870033EEB8 /* User.swift in Sources */,
+				0A4D2DD51A1BD5300033EEB8 /* Canditate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +429,7 @@
 				0A4122721A168D6C0035593C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A4122731A168D6C0035593C /* Build configuration list for PBXNativeTarget "votingsystemTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +438,7 @@
 				0A4122751A168D6C0035593C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -103,15 +103,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ztZ-Xe-6mi"/>
+                    <connections>
+                        <outlet property="ageUITextField" destination="Q0P-fn-DSD" id="VKO-4h-rjD"/>
+                        <outlet property="firstNameUITextField" destination="J60-zE-YLs" id="1Na-rD-85m"/>
+                        <outlet property="lastNameUITextField" destination="1s6-rM-fvw" id="awH-TH-58t"/>
+                        <outlet property="ssnUITextField" destination="T2K-po-vTx" id="QwM-Lr-ydu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="984" y="54"/>
         </scene>
-        <!--View Controller-->
+        <!--View Results View Controller-->
         <scene sceneID="qbZ-iK-eay">
             <objects>
-                <viewController id="S3P-oM-HVE" sceneMemberID="viewController">
+                <viewController id="S3P-oM-HVE" customClass="ViewResultsViewController" customModule="votingsystem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WaE-0A-CMa"/>
                         <viewControllerLayoutGuide type="bottom" id="ttr-fS-58z"/>
@@ -197,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="984" y="756"/>
         </scene>
-        <!--View Controller-->
+        <!--Vote View Controller-->
         <scene sceneID="LPv-BX-OJX">
             <objects>
-                <viewController id="4U8-5z-JRr" sceneMemberID="viewController">
+                <viewController id="4U8-5z-JRr" customClass="VoteViewController" customModule="votingsystem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lua-0E-0pH"/>
                         <viewControllerLayoutGuide type="bottom" id="htb-aU-IVa"/>
@@ -267,10 +273,10 @@
             </objects>
             <point key="canvasLocation" x="1669" y="-158"/>
         </scene>
-        <!--View Controller-->
+        <!--Resutls View Controller-->
         <scene sceneID="9VC-yU-KzC">
             <objects>
-                <viewController id="XwX-s7-QyI" sceneMemberID="viewController">
+                <viewController id="XwX-s7-QyI" customClass="ResutlsViewController" customModule="votingsystem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AqQ-mv-gXW"/>
                         <viewControllerLayoutGuide type="bottom" id="bv6-Zi-pDW"/>
