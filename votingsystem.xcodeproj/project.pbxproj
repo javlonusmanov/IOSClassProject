@@ -14,6 +14,10 @@
 		0A41225E1A168D6C0035593C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41225D1A168D6C0035593C /* Images.xcassets */; };
 		0A4122611A168D6C0035593C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A41225F1A168D6C0035593C /* LaunchScreen.xib */; };
 		0A41226D1A168D6C0035593C /* votingsystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41226C1A168D6C0035593C /* votingsystemTests.swift */; };
+<<<<<<< HEAD
+		0A4D2DD51A1BD5300033EEB8 /* Canditate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */; };
+=======
+>>>>>>> 1056ca5d2e32e0592ebe73ae69c6717e099abfaf
 		0A4D2DD81A1BDB560033EEB8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */; };
 		0A4D2DDA1A1BDB6F0033EEB8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */; };
 		0A4D2DDC1A1BDC1A0033EEB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DDB1A1BDC1A0033EEB8 /* AudioToolbox.framework */; };
@@ -51,6 +55,10 @@
 		0A4122661A168D6C0035593C /* votingsystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = votingsystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41226B1A168D6C0035593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A41226C1A168D6C0035593C /* votingsystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = votingsystemTests.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canditate.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 1056ca5d2e32e0592ebe73ae69c6717e099abfaf
 		0A4D2DD71A1BDB500033EEB8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = votingsystem/Bolts.framework; sourceTree = "<group>"; };
 		0A4D2DD91A1BDB6F0033EEB8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = votingsystem/Parse.framework; sourceTree = "<group>"; };
 		0A4D2DDB1A1BDC1A0033EEB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -121,7 +129,11 @@
 			children = (
 				0A4122531A168D6C0035593C /* AppDelegate.swift */,
 				0A4122581A168D6C0035593C /* ViewController.swift */,
+<<<<<<< HEAD
+				0A4D2DD41A1BD5300033EEB8 /* Canditate.swift */,
+=======
 				5260B8E11A1C0EEA0093D70E /* Question.swift */,
+>>>>>>> 1056ca5d2e32e0592ebe73ae69c6717e099abfaf
 				0A41225A1A168D6C0035593C /* Main.storyboard */,
 				0A41225D1A168D6C0035593C /* Images.xcassets */,
 				0A41225F1A168D6C0035593C /* LaunchScreen.xib */,
@@ -280,6 +292,10 @@
 				5260B8E21A1C0EEA0093D70E /* Question.swift in Sources */,
 				0A4122541A168D6C0035593C /* AppDelegate.swift in Sources */,
 				0A4122571A168D6C0035593C /* votingsystem.xcdatamodeld in Sources */,
+<<<<<<< HEAD
+				0A4D2DD51A1BD5300033EEB8 /* Canditate.swift in Sources */,
+=======
+>>>>>>> 1056ca5d2e32e0592ebe73ae69c6717e099abfaf
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
