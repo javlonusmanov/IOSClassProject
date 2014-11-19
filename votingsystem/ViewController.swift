@@ -11,12 +11,37 @@ import UIKit
 class ViewController: UIViewController {
 	
 	var testQuestions: [Question] = []
+	var count: Int = 0
 	
 	//@IBOutlet var firstAnswer: UIButton!
 	//@IBOutlet var secondAnswer: UIButton!
+	@IBAction func Button1(sender: UIButton) {
+		if (count>testQuestions.count-1) {
+			count = 0
+		}
+		
+		resultStr = testQuestions[count].result1
+		count++
+		viewDidLoad()
+	}
+	
+	@IBAction func Button2(sender: UIButton) {
+		if (count>testQuestions.count-1) {
+			count = 0
+		}
+		
+		resultStr = testQuestions[count].result2
+		count++
+		viewDidLoad()
+	}
+	
+	@IBOutlet weak var Answer1Button: UIButton!
+	@IBOutlet weak var Answer2Button: UIButton!
+	@IBOutlet weak var result: UILabel!
 	
 	var firstAnswer: String = ""
 	var secondAnswer: String = ""
+	var resultStr: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +52,18 @@ class ViewController: UIViewController {
         testObject.save()
 		
 		populateQuestions()
-		var randomNumber = Int(arc4random_uniform(UInt32(testQuestions.count)))
-		//firstAnswer.setTitle(testQuestions[randomNumber].answer1, forState:UIControlState.Normal)
-		//secondAnswer.setTitle(testQuestions[randomNumber].answer2, forState:UIControlState.Normal)
-		firstAnswer = testQuestions[randomNumber].answer1
-		secondAnswer = testQuestions[randomNumber].answer2
+		//var randomNumber = Int(arc4random_uniform(UInt32(testQuestions.count)))
+	Answer1Button.setTitle(testQuestions[count].answer1, forState:UIControlState.Normal)
+	Answer2Button.setTitle(testQuestions[count].answer2, forState:UIControlState.Normal)
+		
+		result.text = resultStr
+		
+		firstAnswer = testQuestions[count].answer1
+		secondAnswer = testQuestions[count].answer2
 		println(firstAnswer)
 		println(secondAnswer)
+		
+		//storeQuestion()
         
     }
 
@@ -52,6 +82,43 @@ class ViewController: UIViewController {
 		testQuestions.append(Question(a1: "Write a lab report", a2: "Staple your eyes", r1: "You're just wrong", r2: "You took the easy way out" ))
 		testQuestions.append(Question(a1: "Get a million dollars", a2: "Get a 4.0", r1: "Money, money, money!", r2: "You must want to go to grad school"))
 	}
+	
+	
+	
+	func storeQuestion()
+	{
+		var gameScore = PFObject(className: "WYRather")
+		var query = PFQuery(className: "WYRather")
+		var lastResult1 = 0
+		var lastResult2 = 0
+		
+		for i in 0..<testQuestions.count - 1
+		{
+			var question = testQuestions.last
+			testQuestions.removeLast()
+			gameScore.setObject(question?.answer1, forKey: "Question1")
+			gameScore.setObject(question?.answer2, forKey: "Question2")
+			//gameScore.setObject(0, forKey: "Result1")
+			//gameScore.setObject(0, forKey: "Result2")
+			gameScore.saveInBackgroundWithBlock{
+				(success: Bool, error: NSError!) -> Void in
+				
+				if success
+				{
+					NSLog("Object created with id: \(gameScore.objectId)")
+				}
+				else
+				{
+					NSLog("%@", error)
+				}
+			}
+			
+			
+			
+		}
+	}
+
+
 
 
 }
