@@ -9,14 +9,12 @@
 import Foundation
 
 class Question {
-	init(a1: String, a2: String, r1: String, r2: String) {
+	init(a1: String, a2: String, r: String) {
 		answer1 = a1
 		answer2 = a2
-		result1 = r1
-		result2 = r2
+		result = r
 	}
 	var answer1: String
 	var answer2: String
-	var result1: String
-	var result2: String
+	var result: String
 }
