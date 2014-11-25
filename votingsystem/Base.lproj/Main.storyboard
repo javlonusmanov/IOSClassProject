@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2fu-J1-mhK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -212,9 +212,9 @@
                                     <action selector="Button2:" destination="1GH-ND-PaT" eventType="touchUpInside" id="zaI-YW-aaV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would You Rather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-RD-xP3">
-                                <rect key="frame" x="215" y="475" width="170.5" height="23.5"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Would You Rather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-RD-xP3">
+                                <rect key="frame" x="215" y="475" width="171" height="24"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -235,6 +235,7 @@
                             <constraint firstItem="LJt-5P-Qbh" firstAttribute="height" secondItem="hca-m5-WZg" secondAttribute="height" multiplier="0.2" constant="183" id="bXW-1R-JHx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZtE-kj-sec" secondAttribute="trailing" id="f9D-OR-4bz"/>
                             <constraint firstItem="lkp-ow-mWK" firstAttribute="top" secondItem="mlk-i5-Eqt" secondAttribute="bottom" constant="217" id="xmz-A5-9Lj"/>
+                            <constraint firstItem="yqD-RD-xP3" firstAttribute="width" secondItem="hca-m5-WZg" secondAttribute="width" id="zNy-JO-Ek6"/>
                         </constraints>
                     </view>
                     <connections>
