@@ -27,8 +27,10 @@
 		0A4D2DEC1A1BDC980033EEB8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DEB1A1BDC980033EEB8 /* StoreKit.framework */; };
 		0A4D2DEE1A1BDCB20033EEB8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4D2DED1A1BDCB20033EEB8 /* SystemConfiguration.framework */; };
 		5260B8E21A1C0EEA0093D70E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260B8E11A1C0EEA0093D70E /* Question.swift */; };
+		D90DA3291A254351000073E0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90DA3281A254351000073E0 /* MainViewController.swift */; };
 		D94218A91A253D2600A2A313 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = D94218A81A253D2600A2A313 /* unnamed.png */; };
 		D94218AB1A253D2E00A2A313 /* unnamed-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D94218AA1A253D2E00A2A313 /* unnamed-2.png */; };
+		D982E0A71A25400100F9146D /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982E0A61A25400100F9146D /* CreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +69,10 @@
 		0A4D2DED1A1BDCB20033EEB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0A608B481A1BE3250085EF6F /* votingsystem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "votingsystem-Bridging-Header.h"; sourceTree = "<group>"; };
 		5260B8E11A1C0EEA0093D70E /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D90DA3281A254351000073E0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D94218A81A253D2600A2A313 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
 		D94218AA1A253D2E00A2A313 /* unnamed-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unnamed-2.png"; sourceTree = "<group>"; };
+		D982E0A61A25400100F9146D /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		0A4122501A168D6B0035593C /* votingsystem */ = {
 			isa = PBXGroup;
 			children = (
+				D90DA3281A254351000073E0 /* MainViewController.swift */,
+				D982E0A61A25400100F9146D /* CreateViewController.swift */,
 				0A4122531A168D6C0035593C /* AppDelegate.swift */,
 				0A4122581A168D6C0035593C /* ViewController.swift */,
 				5260B8E11A1C0EEA0093D70E /* Question.swift */,
@@ -284,8 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D982E0A71A25400100F9146D /* CreateViewController.swift in Sources */,
 				0A4122591A168D6C0035593C /* ViewController.swift in Sources */,
 				5260B8E21A1C0EEA0093D70E /* Question.swift in Sources */,
+				D90DA3291A254351000073E0 /* MainViewController.swift in Sources */,
 				0A4122541A168D6C0035593C /* AppDelegate.swift in Sources */,
 				0A4122571A168D6C0035593C /* votingsystem.xcdatamodeld in Sources */,
 			);
