@@ -16,23 +16,25 @@ class ViewController: UIViewController {
 	//@IBOutlet var firstAnswer: UIButton!
 	//@IBOutlet var secondAnswer: UIButton!
 	@IBAction func Button1(sender: UIButton) {
-		if (count>testQuestions.count-1) {
-			count = 0
+		if (count > (testQuestions.count-1)) {
+			resultStr = "You've answered all our questions. A winner is you."
 		}
-		
-		resultStr = testQuestions[count].result1
-		count++
-		viewDidLoad()
+		else {
+			resultStr = testQuestions[count].result1
+			count++
+		}
+		changeLabels()
 	}
 	
 	@IBAction func Button2(sender: UIButton) {
-		if (count>testQuestions.count-1) {
+		if (count > (testQuestions.count-1)) {
 			count = 0
 		}
-		
-		resultStr = testQuestions[count].result2
-		count++
-		viewDidLoad()
+		else {
+			resultStr = testQuestions[count].result2
+			count++
+		}
+		changeLabels()
 	}
 	
 	@IBOutlet weak var Answer1Button: UIButton!
@@ -66,19 +68,25 @@ class ViewController: UIViewController {
 		
 		populateQuestions()
 		//var randomNumber = Int(arc4random_uniform(UInt32(testQuestions.count)))
-	Answer1Button.setTitle(testQuestions[count].answer1, forState:UIControlState.Normal)
-	Answer2Button.setTitle(testQuestions[count].answer2, forState:UIControlState.Normal)
+		
+		changeLabels()
+		
+    }
+
+	func changeLabels() {
+		if (count > (testQuestions.count - 1)) {
+			Answer1Button.setTitle("Quit", forState:UIControlState.Normal)
+			Answer2Button.setTitle("Restart", forState:UIControlState.Normal)
+		}
+		else {
+			Answer1Button.setTitle(testQuestions[count].answer1, forState:UIControlState.Normal)
+			Answer2Button.setTitle(testQuestions[count].answer2, forState:UIControlState.Normal)
+		}
 		
 		result.text = resultStr
 		
-		firstAnswer = testQuestions[count].answer1
-		secondAnswer = testQuestions[count].answer2
-		println(firstAnswer)
-		println(secondAnswer)
-		
 		//storeQuestion()
-        
-    }
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -125,14 +133,7 @@ class ViewController: UIViewController {
 					NSLog("%@", error)
 				}
 			}
-			
-			
-			
 		}
 	}
-
-
-
-
 }
 
