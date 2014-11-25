@@ -46,6 +46,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.Answer1Button.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+        self.Answer1Button.layer.shadowColor = UIColor.brownColor().CGColor
+        self.Answer1Button.layer.shadowOpacity = 0.8
+        self.Answer1Button.layer.cornerRadius = 10
+        self.Answer2Button.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+        self.Answer2Button.layer.shadowColor = UIColor.brownColor().CGColor
+        self.Answer2Button.layer.shadowOpacity = 0.8
+        self.Answer2Button.layer.cornerRadius = 10
+        self.result.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+        self.result.layer.shadowColor = UIColor.brownColor().CGColor
+        self.result.layer.shadowOpacity = 0.8
+        self.result.layer.cornerRadius = 10
+        
         
         var testObject: PFObject = PFObject(className: "testObject")
         testObject["key"] = "value"
